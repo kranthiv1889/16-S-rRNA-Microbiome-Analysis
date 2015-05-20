@@ -11,7 +11,7 @@
 
 * [Mothur](http://www.mothur.org/)
 * [Phyloseq](https://joey711.github.io/phyloseq/)
-* Dependencies
+* Make.OTU_sh is the shell script for runing mothur pripeline. make sure it is in the same directory as your unzipped fastq data and modify the shell script according to the data in hand 
 * Database configuration
 * How to run tests
 * Deployment instructions
