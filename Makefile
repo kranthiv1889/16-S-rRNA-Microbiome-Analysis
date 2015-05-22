@@ -13,7 +13,7 @@ all: mothur;
 mothur: ;
 	wget -P $(THIRD_PARTY) $(MOTHUR)/v1.35.0.tar.gz
 	tar -C $(THIRD_PARTY) -xzvf $(THIRD_PARTY)/v1.35.0.tar.gz && mv $(THIRD_PARTY)/mothur-1.35.0 $(THIRD_PARTY)/Mothur && cp $(TOP_DIR)/Makefile $(THIRD_PARTY)/Mothur/source && rm $(THIRD_PARTY)/Mothur/source/makefile
-        make -C $(THIRD_PARTY)/Mothur/source
+	make -C $(THIRD_PARTY)/Mothur/source
 	wget -P $(THIRD_PARTY) $(SILVA)/Silva.nr_v119.tgz
 	tar -C $(THIRD_PARTY) -xzvf $(THIRD_PARTY)/Silva.nr_v119.tgz && mv $(THIRD_PARTY)/silva.nr_v119.* $(THIRD_PARTY)/Mothur
 	wget -P $(THIRD_PARTY)/test-data $(TEST_DATA)/MiSeqSOPData.zip
