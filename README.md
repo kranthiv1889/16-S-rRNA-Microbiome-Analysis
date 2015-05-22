@@ -16,6 +16,7 @@
 	* To run the mothur script for your data
 	
 		*./mothur Make_OTU.sh
+		
 * Phyloseq.R is an R script to perform set of experiments on a biom file 
 * To run the script
 
