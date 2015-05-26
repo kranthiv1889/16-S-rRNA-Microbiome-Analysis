@@ -17,4 +17,7 @@ mothur: ;
 	wget -P $(THIRD_PARTY)/test-data $(TEST_DATA)/MiSeqSOPData.zip
 	unzip -C $(THIRD_PARTY)/test-data/MiSeqSOPData.zip && mv $(TOP_DIR)/MiSeq_SOP $(THIRD_PARTY)/test-data && mv $(TOP_DIR)/__MACOSX $(THIRD_PARTY)/test-data 
 	cp $(TOP_DIR)/Make_OTU.sh $(THIRD_PARTY)/test-data/MiSeq_SOP
-	cd $(THIRD_PARTY)/test-data/MiSeq_SOP && $(THIRD_PARTY)/Mothur/source/mothur $(THIRD_PARTY)/test-data/MiSeq_SOP/Make_OTU.sh
+	cp $(THIRD_PARTY)/Mothur/source/mothur $(THIRD_PARTY)/test-data/MiSeq_SOP
+	cd $(THIRD_PARTY)/test-data/MiSeq_SOP && bash $(THIRD_PARTY)/test-data/MiSeq_SOP/Make_OTU.sh
+
+	
