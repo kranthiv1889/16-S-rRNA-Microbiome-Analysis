@@ -1,5 +1,4 @@
 # This is a makefile for runnig 16-S pipeline#
-.PHONY: all test clean
 TOP_DIR := $(shell pwd)
 THIRD_PARTY := $(TOP_DIR)/src/tools
 MOTHUR := https://github.com/mothur/mothur/archive
