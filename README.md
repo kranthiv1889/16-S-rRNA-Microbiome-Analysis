@@ -5,7 +5,7 @@
 
 * To study 16S- rRNA vaginal samples of Human Microbiome
 * Version 1.0
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
 
 ### Before you start ###
 
@@ -22,13 +22,3 @@
 	
 	*make -f Makefile*
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
