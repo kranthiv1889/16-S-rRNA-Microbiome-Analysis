@@ -1,4 +1,5 @@
 # This is a makefile for runnig 16-S pipeline#
+.PHONY: all test clean
 TOP_DIR := $(shell pwd)
 THIRD_PARTY := $(TOP_DIR)/src/tools
 MOTHUR := https://github.com/mothur/mothur/archive
@@ -18,5 +19,6 @@ mothur: ;
 	cp $(TOP_DIR)/Make_OTU.sh $(THIRD_PARTY)/test-data/MiSeq_SOP
 	cp $(THIRD_PARTY)/Mothur/source/mothur $(THIRD_PARTY)/test-data/MiSeq_SOP
 	cd $(THIRD_PARTY)/test-data/MiSeq_SOP && bash $(THIRD_PARTY)/test-data/MiSeq_SOP/Make_OTU.sh
-
+	cp $(TOP_DIR)/Phyloseq.R $(THIRD_PARTY)/test-data/MiSeq_SOP
+	R CMD BATCH Phyloseq.R
 	
